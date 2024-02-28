@@ -60,6 +60,7 @@ public class CustomAdGhostWeb extends EditorCompletionAdapter {
     Spannable label = Spannable.Factory.getInstance().newSpannable(item.label);
     String prefix = getPrefix();
     textUtils = new io.github.rosemoe.sora.widget.TextSummry.TextUtils(tv);
+    /*
     int index = TextUtils.indexOf(item.label, prefix);
     if (index != -1) {
       label.setSpan(
@@ -67,7 +68,7 @@ public class CustomAdGhostWeb extends EditorCompletionAdapter {
           index,
           index + prefix.length(),
           Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
-    }
+    }*/
     tv.setText(label);
     tv1.setTextColor(getThemeColor(EditorColorScheme.AUTO_COMP_PANEL_BG));
     data.setTextColor(getThemeColor(EditorColorScheme.ATTRIBUTE_VALUE));
